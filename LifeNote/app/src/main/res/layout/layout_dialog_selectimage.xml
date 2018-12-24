@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    >
+
+
+    <RadioGroup
+        android:id="@+id/selectImageGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checkedButton="@+id/radioAlbum"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <RadioButton
+            android:id="@+id/radioAlbum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="앨범에서 사진 선택하기"
+            android:textAlignment="viewStart"
+            android:textStyle="bold" />
+<!--                        나중에 카메라를 추가하기 위해 주석처리를 하였다.
+        <RadioButton
+            android:id="@+id/radioCamera"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="카메라로 사진찍기"
+            android:textAlignment="viewStart"
+            android:textStyle="bold" />
+ -->
+    </RadioGroup>
+</LinearLayout>

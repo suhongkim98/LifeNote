@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff775e"
+    tools:context=".LoginActivity"
+    android:weightSum="3.5"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="쉼표\n노트"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="40sp" />
+    <LinearLayout
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:layout_width="match_parent"
+        android:weightSum="10"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:layout_weight="3"
+            android:text="아이디"
+            android:textColor="#000000"/>
+        <EditText
+            android:id="@+id/editTextId"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="6"
+            android:textSize="25sp"
+            android:background="@android:color/white"
+            android:hint="아이디 입력"
+            android:inputType="textPersonName" />
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+        </android.support.constraint.ConstraintLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="0.5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:weightSum="10"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:layout_weight="3"
+            android:text="비밀번호"
+            android:textColor="#000000"/>
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:background="@android:color/white"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="6"
+            android:textSize="25sp"
+            android:hint="비밀번호 입력"
+            android:inputType="textPersonName" />
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+        </android.support.constraint.ConstraintLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.25"
+        android:visibility="invisible">
+
+        <Button
+            android:id="@+id/buttonSkip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onSkip"
+            android:text="개발용스킵" />
+
+        <EditText
+            android:id="@+id/editTextServerIp"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="임시 아이피 입력"
+            android:inputType="textPersonName"
+            android:paddingTop="5dp" />
+    </LinearLayout>
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_weight="0.3"
+        android:layout_height="0dp">
+    </android.support.constraint.ConstraintLayout>
+    <Button
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:id="@+id/buttonLogin"
+        android:layout_width="170dp"
+        android:layout_height="30dp"
+        android:layout_weight="0.25"
+        android:layout_gravity="center_horizontal"
+        android:onClick="onLoginButtonPressed"
+        android:text="로그인"
+        android:textSize="30sp"/>
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_weight="0.2"
+        android:layout_height="0dp">
+    </android.support.constraint.ConstraintLayout>
+    <Button
+        android:id="@+id/buttonRegister"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_weight="0.25"
+        android:layout_width="170dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_horizontal"
+        android:onClick="onRegisterButtonPressed"
+        android:text="회원가입"
+        android:textSize="30sp"/>
+</LinearLayout>
